@@ -125,6 +125,16 @@ export default defineConfig((config) => {
         },
       },
     },
+    server: {
+      host: "0.0.0.0",
+      port: 5173,
+      strictPort: true,
+      cors: true,
+      hmr: {
+        clientPort: 443, // Ensures HMR works over ngrok
+      },
+      allowedHosts: ["all"], // Allow all hosts including ngrok
+    },
   };
 });
 

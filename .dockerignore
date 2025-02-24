@@ -1,5 +1,5 @@
 # Ignore Git and GitHub files
-.git
+.git/
 .github/
 
 # Ignore Husky configuration files
@@ -15,12 +15,23 @@ README.md
 *.local
 *.example
 
-# Ignore node modules, logs and cache files
+# Ignore node modules, logs, and cache files
 **/*.log
-**/node_modules
-**/dist
-**/build
-**/.cache
-logs
-dist-ssr
+**/node_modules/
+**/dist/
+**/build/
+**/.cache/
+logs/
+dist-ssr/
 .DS_Store
+
+# Ignore Docker configuration files (optional)
+Dockerfile
+docker-compose.yml
+
+# Ignore IDE specific files (optional)
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
